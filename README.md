@@ -1,4 +1,4 @@
-# CyberRecon - Advanced Reconnaissance Toolkit
+# CyberRecon - Advanced Reconnaissance Tool
 
 <div align="center">
 
@@ -6,40 +6,40 @@
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey.svg)
 
-**A comprehensive and modular reconnaissance tool designed for cybersecurity professionals and penetration testers.**
+**A comprehensive, modular reconnaissance tool for cybersecurity professionals and penetration testers**
 
 [Features](#features) • [Installation](#installation) • [Usage](#usage) • [Documentation](#documentation) • [Contributing](#contributing)
 
 </div>
 
-## 🚀 Key Features
+## 🚀 Features
 
 ### 🔍 Passive Reconnaissance
-- **WHOIS Lookup**: Gather detailed domain registration info.
-- **DNS Enumeration**: Query all record types (A, AAAA, MX, NS, TXT, SOA, CNAME).
-- **Subdomain Discovery**: Utilize Certificate Transparency logs and threat intelligence sources.
+- **WHOIS Lookup**: Extract comprehensive domain registration information
+- **DNS Enumeration**: Query all record types (A, AAAA, MX, NS, TXT, SOA, CNAME)
+- **Subdomain Discovery**: Certificate Transparency logs, threat intelligence feeds
 
 ### 🎯 Active Reconnaissance
-- **Port Scanning**: Leverage socket-based scanning and Nmap integration.
-- **Banner Grabbing**: Identify services and versions running on open ports.
-- **Technology Detection**: Detect web frameworks and server technologies.
+- **Port Scanning**: Socket-based and Nmap integration
+- **Banner Grabbing**: Service identification and version detection
+- **Technology Detection**: Web framework and server fingerprinting
 
 ### 📊 Reporting & Analysis
-- **Multiple Formats**: Export reports in text, HTML, or JSON formats.
-- **Comprehensive Analysis**: Includes executive summaries and detailed technical findings.
-- **Timestamped Results**: Complete audit trail with IP resolution.
+- **Multiple Formats**: Text, HTML, and JSON reports
+- **Comprehensive Analysis**: Executive summaries and technical details
+- **Timestamped Results**: Complete audit trail with IP resolution
 
 ### ⚡ Advanced Features
-- **Modular Architecture**: Run individual modules independently.
-- **Parallel Processing**: Optimized for high-performance async operations.
-- **Rate Limiting**: Built-in throttling to ensure respectful API usage.
-- **Error Resilience**: Handles network interruptions gracefully.
-- **Docker Support**: Ready-to-use containerized deployment.
+- **Modular Architecture**: Independent module execution
+- **Parallel Processing**: Optimized performance with async operations
+- **Rate Limiting**: Respectful API usage with built-in throttling
+- **Error Resilience**: Graceful handling of network issues
+- **Docker Support**: Containerized deployment ready
 
-## 📋 System Requirements
+## 📋 Requirements
 
-- Python 3.8 or higher
-- Nmap (for advanced port scanning)
+- Python 3.8+
+- nmap (for advanced port scanning)
 - Internet connection (for API-based modules)
 
 ## 🔧 Installation
@@ -48,45 +48,44 @@
    ```bash
    git clone <repository-url>
    cd task1
-Install required Python libraries:
+   ```
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Install Nmap (optional but recommended):
+2. **Install Python dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Ubuntu/Debian:
+3. **Install nmap (optional but recommended):**
+   
+   **Ubuntu/Debian:**
+   ```bash
+   sudo apt-get install nmap
+   ```
+   
+   **CentOS/RHEL:**
+   ```bash
+   sudo yum install nmap
+   ```
+   
+   **Windows:**
+   Download from https://nmap.org/download.html
+   
+   **macOS:**
+   ```bash
+   brew install nmap
+   ```
 
-bash
-Copy
-Edit
-sudo apt-get install nmap
-CentOS/RHEL:
+## 📖 Usage
 
-bash
-Copy
-Edit
-sudo yum install nmap
-Windows:
-Download from Nmap.
+### Basic Usage
 
-macOS:
-
-bash
-Copy
-Edit
-brew install nmap
-📖 Usage Instructions
-Basic Command
-bash
-Copy
-Edit
+```bash
 python main.py --target example.com --all
-Individual Modules
-bash
-Copy
-Edit
+```
+
+### Individual Modules
+
+```bash
 # WHOIS lookup
 python main.py --target example.com --whois
 
@@ -104,39 +103,36 @@ python main.py --target example.com --banners
 
 # Technology detection
 python main.py --target example.com --tech
-Advanced Options
-bash
-Copy
-Edit
+```
+
+### Advanced Options
+
+```bash
 # Custom port range for scanning
 python main.py --target example.com --portscan --ports 1-1000
 
 # Specify output format and file
 python main.py --target example.com --all --output-format html --output-file report.html
 
-# Adjust verbosity level
+# Adjust verbosity
 python main.py --target example.com --dns --verbose
 
-# Silent mode
+# Quiet mode
 python main.py --target example.com --whois --quiet
-Configuration File
-The tool uses a configuration file at config/config.yaml, where you can adjust settings such as:
+```
 
-API Keys: For advanced subdomain discovery.
+### Configuration
 
-Timeouts: Configure network operation timeouts.
+The tool uses a configuration file located at `config/config.yaml`. You can customize:
 
-Rate Limits: Control the frequency of API calls.
+- **API Keys**: For enhanced subdomain discovery
+- **Timeouts**: Network operation timeouts
+- **Rate Limits**: API call frequency
+- **Default Ports**: Port scanning ranges
+- **User Agents**: HTTP request headers
 
-Default Ports: Set port ranges for scanning.
-
-User Agents: Define HTTP request headers.
-
-Example config:
-
-yaml
-Copy
-Edit
+Example configuration:
+```yaml
 api:
   timeout: 10
   rate_limit: 1.0
@@ -150,27 +146,30 @@ scanning:
 subdomain_apis:
   - "https://crt.sh/?q=%25.{domain}&output=json"
   - "https://api.hackertarget.com/hostsearch/?q={domain}"
-🎯 Available Command Line Options
-Option	Description	Example
---target	Target domain or IP	--target example.com
---whois	Perform WHOIS lookup	--whois
---dns	Perform DNS enumeration	--dns
---subdomains	Discover subdomains	--subdomains
---portscan	Run port scan	--portscan
---banners	Grab service banners	--banners
---tech	Detect technologies	--tech
---all	Run all modules	--all
---ports	Specify port range	--ports 1-1000
---output-format	Set report format (text/html/json)	--output-format html
---output-file	Define output file path	--output-file report.html
---verbose	Increase output verbosity	--verbose
---quiet	Silent mode	--quiet
+```
 
-📊 Sample Report Outputs
-Text Report
-yaml
-Copy
-Edit
+## 🎯 Command Line Options
+
+| Option | Description | Example |
+|--------|-------------|---------|
+| `--target` | Target domain or IP address | `--target example.com` |
+| `--whois` | Perform WHOIS lookup | `--whois` |
+| `--dns` | DNS enumeration | `--dns` |
+| `--subdomains` | Subdomain discovery | `--subdomains` |
+| `--portscan` | Port scanning | `--portscan` |
+| `--banners` | Banner grabbing | `--banners` |
+| `--tech` | Technology detection | `--tech` |
+| `--all` | Run all modules | `--all` |
+| `--ports` | Port range for scanning | `--ports 1-1000` |
+| `--output-format` | Report format (text/html/json) | `--output-format html` |
+| `--output-file` | Output file path | `--output-file report.html` |
+| `--verbose` | Increase verbosity | `--verbose` |
+| `--quiet` | Quiet mode | `--quiet` |
+
+## 📊 Sample Output
+
+### Text Report
+```
 === CyberRecon Report ===
 Target: example.com
 Scan Date: 2024-01-15 10:30:45
@@ -197,23 +196,19 @@ MX Records:
 • Missing security headers detected
 • Outdated software versions found
 • Weak SSL/TLS configuration
-HTML Report
-The HTML version includes:
+```
 
-Executive summary with risk ratings.
+### HTML Report
+The HTML report provides a professional, web-based view with:
+- Executive summary with risk ratings
+- Detailed findings with expandable sections
+- Security recommendations
+- Interactive charts and graphs
+- Professional styling with CSS
 
-Expandable sections with detailed findings.
+## 🏗️ Project Structure
 
-Security recommendations.
-
-Interactive charts and graphs.
-
-Professional design with CSS.
-
-🏗️ Project Layout
-bash
-Copy
-Edit
+```
 task1/
 ├── main.py                 # CLI entry point
 ├── config/
@@ -233,86 +228,93 @@ task1/
 │   └── report_generator.py # Report generation
 ├── logs/                  # Application logs
 └── requirements.txt       # Python dependencies
-🔒 Security Considerations
-Ethical Usage Guidelines
-Authorization: Only scan systems that you own or have explicit permission to test.
+```
 
-Responsible Disclosure: Report any vulnerabilities found through appropriate channels.
+## 🔒 Security Considerations
 
-Rate Limiting: The tool includes built-in rate limiting to prevent overloading target systems.
+### Ethical Usage
+- **Authorization Required**: Only scan systems you own or have explicit permission to test
+- **Responsible Disclosure**: Report vulnerabilities through proper channels
+- **Rate Limiting**: Tool includes built-in rate limiting to avoid overwhelming targets
+- **Legal Compliance**: Ensure compliance with local laws and regulations
 
-Legal Compliance: Ensure you comply with all local laws and regulations when using this tool.
+### Privacy Protection
+- **No Data Storage**: Tool doesn't store scan results permanently
+- **Anonymization**: Consider using VPN/proxy for sensitive assessments
+- **Log Management**: Review and sanitize logs before sharing
 
-Privacy Protection
-No Data Storage: The tool does not store scan results permanently.
+## 🐛 Troubleshooting
 
-Anonymization: For sensitive assessments, consider using VPNs or proxies.
+### Common Issues
 
-Log Management: Review and sanitize logs before sharing.
-
-🐛 Troubleshooting
-Common Issues
-1. Permission Denied Errors
-
-bash
-Copy
-Edit
+**1. Permission Denied Errors**
+```bash
 # Run with appropriate permissions for port scanning
 sudo python main.py --target example.com --portscan
-2. DNS Resolution Failures
+```
 
-bash
-Copy
-Edit
+**2. DNS Resolution Failures**
+```bash
 # Check DNS configuration
 nslookup example.com
-3. Network Timeouts
+```
 
-bash
-Copy
-Edit
+**3. Network Timeouts**
+```bash
 # Increase timeout in config/config.yaml
 api:
   timeout: 30
-4. Missing Dependencies
+```
 
-bash
-Copy
-Edit
+**4. Missing Dependencies**
+```bash
 # Reinstall requirements
 pip install -r requirements.txt --force-reinstall
-Debug Mode
+```
+
+### Debug Mode
+
 Enable debug logging for troubleshooting:
-
-bash
-Copy
-Edit
+```bash
 python main.py --target example.com --all --verbose
-Check logs in the logs/ directory for detailed information.
+```
 
-🤝 Contributing
-Fork the repository
+Check logs in the `logs/` directory for detailed information.
 
-Create a feature branch: git checkout -b feature-name
+## 🤝 Contributing
 
-Commit changes: git commit -am 'Add feature'
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature-name`
+3. Commit changes: `git commit -am 'Add feature'`
+4. Push to branch: `git push origin feature-name`
+5. Submit a pull request
 
-Push to branch: git push origin feature-name
+### Development Guidelines
 
-Submit a pull request
+- Follow PEP 8 coding standards
+- Add type hints to all functions
+- Include comprehensive docstrings
+- Write unit tests for new modules
+- Update documentation for new features
 
-Development Guidelines
-Follow PEP 8 coding standards.
+## 📜 License
 
-Write unit tests for new features.
+This tool is provided for educational and authorized security testing purposes only. Users are responsible for ensuring compliance with applicable laws and regulations.
 
-Ensure documentation is up-to-date.
+## 🙏 Acknowledgments
 
-📄 License
-Distributed under the MIT License. See LICENSE for more information.
+- **nmap**: Network exploration and security auditing
+- **Python asyncio**: Asynchronous programming support
+- **Various APIs**: Subdomain enumeration services
+- **Security Community**: Vulnerability research and disclosure
 
-css
-Copy
-Edit
+## 📞 Support
 
-This structure provides a clean and comprehensive README that covers all the necessary sections to help 
+For questions, issues, or contributions:
+- Create an issue in the repository
+- Follow the contribution guidelines
+- Review existing documentation
+
+---
+
+**⚠️ Disclaimer**: This tool is intended for authorized security testing only. Users are responsible for ensuring they have proper authorization before scanning any systems. Unauthorized scanning may be illegal in your jurisdiction.
