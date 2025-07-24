@@ -46,8 +46,7 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
-   cd task1
+   git clone https://github.com/Sharjeelkhh/ReconSuite.git
    ```
 
 2. **Install Python dependencies:**
