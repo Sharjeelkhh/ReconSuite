@@ -1,0 +1,304 @@
+2025-07-15 22:42:55 - root - [32mINFO[0m - main:346 - Starting reconnaissance on target: ai-centre.pk
+2025-07-15 22:42:55 - modules.subdomain_module - [32mINFO[0m - _load_wordlist:344 - Loaded 61 words from config/subdomains.txt
+2025-07-15 22:42:55 - __main__ - [32mINFO[0m - run_all_modules:135 - Starting comprehensive reconnaissance for ai-centre.pk
+2025-07-15 22:42:55 - __main__ - [32mINFO[0m - run_whois:60 - Starting WHOIS lookup for ai-centre.pk
+2025-07-15 22:42:55 - modules.whois_module - [32mINFO[0m - wrapper:126 - lookup executed in 0.00 seconds
+2025-07-15 22:42:55 - modules.whois_module - [32mINFO[0m - lookup:38 - Starting WHOIS lookup for ai-centre.pk
+2025-07-15 22:42:56 - modules.whois_module - [32mINFO[0m - lookup:50 - WHOIS lookup completed for ai-centre.pk
+2025-07-15 22:42:56 - __main__ - [32mINFO[0m - run_dns:71 - Starting DNS enumeration for ai-centre.pk
+2025-07-15 22:42:56 - modules.dns_module - [32mINFO[0m - wrapper:126 - enumerate executed in 0.00 seconds
+2025-07-15 22:42:56 - modules.dns_module - [32mINFO[0m - enumerate:49 - Starting DNS enumeration for ai-centre.pk
+2025-07-15 22:42:58 - modules.dns_module - [32mINFO[0m - enumerate:89 - DNS enumeration completed for ai-centre.pk
+2025-07-15 22:42:58 - __main__ - [32mINFO[0m - run_subdomains:82 - Starting subdomain enumeration for ai-centre.pk
+2025-07-15 22:42:58 - modules.subdomain_module - [32mINFO[0m - wrapper:126 - enumerate executed in 0.00 seconds
+2025-07-15 22:42:58 - modules.subdomain_module - [32mINFO[0m - enumerate:48 - Starting subdomain enumeration for ai-centre.pk
+2025-07-15 22:42:58 - modules.subdomain_module - [32mINFO[0m - _enumerate_crt_sh:124 - Querying Certificate Transparency logs for ai-centre.pk
+2025-07-15 22:42:59 - modules.subdomain_module - [32mINFO[0m - _enumerate_otx:179 - Querying AlienVault OTX for ai-centre.pk
+2025-07-15 22:42:59 - modules.subdomain_module - [32mINFO[0m - _enumerate_wordlist:226 - Starting DNS bruteforce for ai-centre.pk
+2025-07-15 22:43:02 - modules.subdomain_module - [32mINFO[0m - _enumerate_otx:203 - Found 0 subdomains from OTX
+2025-07-15 22:43:03 - modules.subdomain_module - [32mINFO[0m - _enumerate_wordlist:258 - Found 61 subdomains from DNS bruteforce
+2025-07-15 22:43:06 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://crt.sh/?q=ai-centre.pk&output=json
+2025-07-15 22:43:06 - modules.subdomain_module - [33mWARNING[0m - _enumerate_crt_sh:162 - crt.sh query failed with status: No response
+2025-07-15 22:43:06 - modules.subdomain_module - [32mINFO[0m - _verify_subdomains:275 - Verifying 61 subdomains
+2025-07-15 22:43:11 - modules.dns_module - [33mWARNING[0m - _sync_query_record_type:166 - DNS query timeout for A remote.ai-centre.pk
+2025-07-15 22:43:17 - modules.dns_module - [33mWARNING[0m - _sync_query_record_type:166 - DNS query timeout for CNAME email.ai-centre.pk
+2025-07-15 22:43:22 - modules.dns_module - [33mWARNING[0m - _sync_query_record_type:166 - DNS query timeout for A test.ai-centre.pk
+2025-07-15 22:43:23 - modules.subdomain_module - [32mINFO[0m - _verify_subdomains:300 - Verified 59 active subdomains
+2025-07-15 22:43:23 - modules.subdomain_module - [32mINFO[0m - enumerate:106 - Subdomain enumeration completed for ai-centre.pk. Found 59 active subdomains
+2025-07-15 22:43:23 - __main__ - [32mINFO[0m - run_port_scan:96 - Starting port scan for ['ai-centre.pk', 'wap.ai-centre.pk', 'news.ai-centre.pk', 'cdn.ai-centre.pk', 'shop.ai-centre.pk', 'vpn.ai-centre.pk', 'subdomain.ai-centre.pk', 'download.ai-centre.pk', 'support.ai-centre.pk', 'uploads.ai-centre.pk', 'gateway.ai-centre.pk', 'cluster.ai-centre.pk', 'mx.ai-centre.pk', 'mail.ai-centre.pk', 'node.ai-centre.pk', 'secure.ai-centre.pk', 'ns.ai-centre.pk', 'host.ai-centre.pk', 'sub.ai-centre.pk', 'images.ai-centre.pk', 'firewall.ai-centre.pk', 'cache.ai-centre.pk', 'server.ai-centre.pk', 'portal.ai-centre.pk', 'api.ai-centre.pk', 'help.ai-centre.pk', 'img.ai-centre.pk', 'video.ai-centre.pk', 'admin.ai-centre.pk', 'mobile.ai-centre.pk', 'static.ai-centre.pk', 'lb.ai-centre.pk', 'ns2.ai-centre.pk', 'balancer.ai-centre.pk', 'proxy.ai-centre.pk', 'dev.ai-centre.pk', 'whois.ai-centre.pk', 'm.ai-centre.pk', 'webmail.ai-centre.pk', 'email.ai-centre.pk', 'app.ai-centre.pk', 'mx2.ai-centre.pk', 'docs.ai-centre.pk', 'router.ai-centre.pk', 'css.ai-centre.pk', 'staging.ai-centre.pk', 'store.ai-centre.pk', 'assets.ai-centre.pk', 'mx1.ai-centre.pk', 'pop.ai-centre.pk', 'ns1.ai-centre.pk', 'js.ai-centre.pk', 'dns.ai-centre.pk', 'files.ai-centre.pk', 'media.ai-centre.pk', 'blog.ai-centre.pk', 'www.ai-centre.pk', 'imap.ai-centre.pk', 'ftp.ai-centre.pk', 'smtp.ai-centre.pk']
+2025-07-15 22:43:23 - modules.port_scanner - [32mINFO[0m - wrapper:126 - scan executed in 0.00 seconds
+2025-07-15 22:43:23 - modules.port_scanner - [32mINFO[0m - scan:53 - Starting port scan for 60 targets
+2025-07-15 22:43:23 - modules.port_scanner - [32mINFO[0m - scan:82 - Using socket-based scanning
+2025-07-15 22:43:47 - modules.port_scanner - [32mINFO[0m - scan:88 - Port scan completed. Found 7 open ports
+2025-07-15 22:43:47 - __main__ - [32mINFO[0m - run_banner_grab:110 - Starting banner grabbing
+2025-07-15 22:43:47 - modules.banner_grabber - [32mINFO[0m - wrapper:126 - grab_banners executed in 0.00 seconds
+2025-07-15 22:43:47 - modules.banner_grabber - [32mINFO[0m - grab_banners:59 - Starting banner grabbing for discovered open ports
+2025-07-15 22:43:53 - modules.banner_grabber - [31mERROR[0m - grab_banners:130 - Banner grabbing failed: 'NoneType' object has no attribute 'lower'
+2025-07-15 22:43:53 - __main__ - [32mINFO[0m - run_tech_detection:124 - Starting technology detection for ['ai-centre.pk', 'wap.ai-centre.pk', 'news.ai-centre.pk', 'cdn.ai-centre.pk', 'shop.ai-centre.pk', 'vpn.ai-centre.pk', 'subdomain.ai-centre.pk', 'download.ai-centre.pk', 'support.ai-centre.pk', 'uploads.ai-centre.pk', 'gateway.ai-centre.pk', 'cluster.ai-centre.pk', 'mx.ai-centre.pk', 'mail.ai-centre.pk', 'node.ai-centre.pk', 'secure.ai-centre.pk', 'ns.ai-centre.pk', 'host.ai-centre.pk', 'sub.ai-centre.pk', 'images.ai-centre.pk', 'firewall.ai-centre.pk', 'cache.ai-centre.pk', 'server.ai-centre.pk', 'portal.ai-centre.pk', 'api.ai-centre.pk', 'help.ai-centre.pk', 'img.ai-centre.pk', 'video.ai-centre.pk', 'admin.ai-centre.pk', 'mobile.ai-centre.pk', 'static.ai-centre.pk', 'lb.ai-centre.pk', 'ns2.ai-centre.pk', 'balancer.ai-centre.pk', 'proxy.ai-centre.pk', 'dev.ai-centre.pk', 'whois.ai-centre.pk', 'm.ai-centre.pk', 'webmail.ai-centre.pk', 'email.ai-centre.pk', 'app.ai-centre.pk', 'mx2.ai-centre.pk', 'docs.ai-centre.pk', 'router.ai-centre.pk', 'css.ai-centre.pk', 'staging.ai-centre.pk', 'store.ai-centre.pk', 'assets.ai-centre.pk', 'mx1.ai-centre.pk', 'pop.ai-centre.pk', 'ns1.ai-centre.pk', 'js.ai-centre.pk', 'dns.ai-centre.pk', 'files.ai-centre.pk', 'media.ai-centre.pk', 'blog.ai-centre.pk', 'www.ai-centre.pk', 'imap.ai-centre.pk', 'ftp.ai-centre.pk', 'smtp.ai-centre.pk']
+2025-07-15 22:43:53 - modules.tech_detector - [32mINFO[0m - wrapper:126 - detect executed in 0.00 seconds
+2025-07-15 22:43:53 - modules.tech_detector - [32mINFO[0m - detect:180 - Starting technology detection for 60 targets
+2025-07-15 22:43:53 - asyncio - [31mERROR[0m - default_exception_handler:1833 - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001DB7DF6F200>
+2025-07-15 22:43:53 - asyncio - [31mERROR[0m - default_exception_handler:1833 - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001DB7E9F2A80>
+2025-07-15 22:45:26 - root - [32mINFO[0m - main:346 - Starting reconnaissance on target: ai-centre.pk
+2025-07-15 22:45:26 - modules.subdomain_module - [32mINFO[0m - _load_wordlist:344 - Loaded 61 words from config/subdomains.txt
+2025-07-15 22:45:26 - __main__ - [32mINFO[0m - run_all_modules:135 - Starting comprehensive reconnaissance for ai-centre.pk
+2025-07-15 22:45:26 - __main__ - [32mINFO[0m - run_whois:60 - Starting WHOIS lookup for ai-centre.pk
+2025-07-15 22:45:26 - modules.whois_module - [32mINFO[0m - wrapper:126 - lookup executed in 0.00 seconds
+2025-07-15 22:45:26 - modules.whois_module - [32mINFO[0m - lookup:38 - Starting WHOIS lookup for ai-centre.pk
+2025-07-15 22:45:27 - modules.whois_module - [32mINFO[0m - lookup:50 - WHOIS lookup completed for ai-centre.pk
+2025-07-15 22:45:27 - __main__ - [32mINFO[0m - run_dns:71 - Starting DNS enumeration for ai-centre.pk
+2025-07-15 22:45:27 - modules.dns_module - [32mINFO[0m - wrapper:126 - enumerate executed in 0.00 seconds
+2025-07-15 22:45:27 - modules.dns_module - [32mINFO[0m - enumerate:49 - Starting DNS enumeration for ai-centre.pk
+2025-07-15 22:45:29 - modules.dns_module - [32mINFO[0m - enumerate:89 - DNS enumeration completed for ai-centre.pk
+2025-07-15 22:45:29 - __main__ - [32mINFO[0m - run_subdomains:82 - Starting subdomain enumeration for ai-centre.pk
+2025-07-15 22:45:29 - modules.subdomain_module - [32mINFO[0m - wrapper:126 - enumerate executed in 0.00 seconds
+2025-07-15 22:45:29 - modules.subdomain_module - [32mINFO[0m - enumerate:48 - Starting subdomain enumeration for ai-centre.pk
+2025-07-15 22:45:29 - modules.subdomain_module - [32mINFO[0m - _enumerate_crt_sh:124 - Querying Certificate Transparency logs for ai-centre.pk
+2025-07-15 22:45:29 - modules.subdomain_module - [32mINFO[0m - _enumerate_otx:179 - Querying AlienVault OTX for ai-centre.pk
+2025-07-15 22:45:29 - modules.subdomain_module - [32mINFO[0m - _enumerate_wordlist:226 - Starting DNS bruteforce for ai-centre.pk
+2025-07-15 22:45:31 - modules.subdomain_module - [32mINFO[0m - _enumerate_otx:203 - Found 0 subdomains from OTX
+2025-07-15 22:45:32 - modules.subdomain_module - [32mINFO[0m - _enumerate_wordlist:258 - Found 61 subdomains from DNS bruteforce
+2025-07-15 22:45:36 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://crt.sh/?q=ai-centre.pk&output=json
+2025-07-15 22:45:36 - modules.subdomain_module - [33mWARNING[0m - _enumerate_crt_sh:162 - crt.sh query failed with status: No response
+2025-07-15 22:45:36 - modules.subdomain_module - [32mINFO[0m - _verify_subdomains:275 - Verifying 61 subdomains
+2025-07-15 22:45:39 - modules.subdomain_module - [32mINFO[0m - _verify_subdomains:300 - Verified 61 active subdomains
+2025-07-15 22:45:39 - modules.subdomain_module - [32mINFO[0m - enumerate:106 - Subdomain enumeration completed for ai-centre.pk. Found 61 active subdomains
+2025-07-15 22:45:39 - __main__ - [32mINFO[0m - run_port_scan:96 - Starting port scan for ['ai-centre.pk', 'help.ai-centre.pk', 'vpn.ai-centre.pk', 'whois.ai-centre.pk', 'firewall.ai-centre.pk', 'test.ai-centre.pk', 'staging.ai-centre.pk', 'router.ai-centre.pk', 'api.ai-centre.pk', 'mx2.ai-centre.pk', 'imap.ai-centre.pk', 'm.ai-centre.pk', 'ftp.ai-centre.pk', 'cdn.ai-centre.pk', 'media.ai-centre.pk', 'mail.ai-centre.pk', 'node.ai-centre.pk', 'docs.ai-centre.pk', 'download.ai-centre.pk', 'cluster.ai-centre.pk', 'files.ai-centre.pk', 'uploads.ai-centre.pk', 'mx1.ai-centre.pk', 'lb.ai-centre.pk', 'cache.ai-centre.pk', 'secure.ai-centre.pk', 'ns1.ai-centre.pk', 'subdomain.ai-centre.pk', 'mobile.ai-centre.pk', 'dev.ai-centre.pk', 'store.ai-centre.pk', 'ns2.ai-centre.pk', 'server.ai-centre.pk', 'images.ai-centre.pk', 'mx.ai-centre.pk', 'pop.ai-centre.pk', 'smtp.ai-centre.pk', 'assets.ai-centre.pk', 'img.ai-centre.pk', 'js.ai-centre.pk', 'balancer.ai-centre.pk', 'shop.ai-centre.pk', 'sub.ai-centre.pk', 'support.ai-centre.pk', 'static.ai-centre.pk', 'webmail.ai-centre.pk', 'dns.ai-centre.pk', 'remote.ai-centre.pk', 'wap.ai-centre.pk', 'ns.ai-centre.pk', 'blog.ai-centre.pk', 'host.ai-centre.pk', 'news.ai-centre.pk', 'email.ai-centre.pk', 'proxy.ai-centre.pk', 'css.ai-centre.pk', 'admin.ai-centre.pk', 'video.ai-centre.pk', 'www.ai-centre.pk', 'gateway.ai-centre.pk', 'app.ai-centre.pk', 'portal.ai-centre.pk']
+2025-07-15 22:45:39 - modules.port_scanner - [32mINFO[0m - wrapper:126 - scan executed in 0.00 seconds
+2025-07-15 22:45:39 - modules.port_scanner - [32mINFO[0m - scan:53 - Starting port scan for 62 targets
+2025-07-15 22:45:39 - modules.port_scanner - [32mINFO[0m - scan:82 - Using socket-based scanning
+2025-07-15 22:45:56 - modules.port_scanner - [32mINFO[0m - scan:88 - Port scan completed. Found 38 open ports
+2025-07-15 22:45:56 - __main__ - [32mINFO[0m - run_banner_grab:110 - Starting banner grabbing
+2025-07-15 22:45:56 - modules.banner_grabber - [32mINFO[0m - wrapper:126 - grab_banners executed in 0.00 seconds
+2025-07-15 22:45:56 - modules.banner_grabber - [32mINFO[0m - grab_banners:59 - Starting banner grabbing for discovered open ports
+2025-07-15 22:46:03 - modules.banner_grabber - [31mERROR[0m - grab_banners:130 - Banner grabbing failed: 'NoneType' object has no attribute 'lower'
+2025-07-15 22:46:03 - __main__ - [32mINFO[0m - run_tech_detection:124 - Starting technology detection for ['ai-centre.pk', 'help.ai-centre.pk', 'vpn.ai-centre.pk', 'whois.ai-centre.pk', 'firewall.ai-centre.pk', 'test.ai-centre.pk', 'staging.ai-centre.pk', 'router.ai-centre.pk', 'api.ai-centre.pk', 'mx2.ai-centre.pk', 'imap.ai-centre.pk', 'm.ai-centre.pk', 'ftp.ai-centre.pk', 'cdn.ai-centre.pk', 'media.ai-centre.pk', 'mail.ai-centre.pk', 'node.ai-centre.pk', 'docs.ai-centre.pk', 'download.ai-centre.pk', 'cluster.ai-centre.pk', 'files.ai-centre.pk', 'uploads.ai-centre.pk', 'mx1.ai-centre.pk', 'lb.ai-centre.pk', 'cache.ai-centre.pk', 'secure.ai-centre.pk', 'ns1.ai-centre.pk', 'subdomain.ai-centre.pk', 'mobile.ai-centre.pk', 'dev.ai-centre.pk', 'store.ai-centre.pk', 'ns2.ai-centre.pk', 'server.ai-centre.pk', 'images.ai-centre.pk', 'mx.ai-centre.pk', 'pop.ai-centre.pk', 'smtp.ai-centre.pk', 'assets.ai-centre.pk', 'img.ai-centre.pk', 'js.ai-centre.pk', 'balancer.ai-centre.pk', 'shop.ai-centre.pk', 'sub.ai-centre.pk', 'support.ai-centre.pk', 'static.ai-centre.pk', 'webmail.ai-centre.pk', 'dns.ai-centre.pk', 'remote.ai-centre.pk', 'wap.ai-centre.pk', 'ns.ai-centre.pk', 'blog.ai-centre.pk', 'host.ai-centre.pk', 'news.ai-centre.pk', 'email.ai-centre.pk', 'proxy.ai-centre.pk', 'css.ai-centre.pk', 'admin.ai-centre.pk', 'video.ai-centre.pk', 'www.ai-centre.pk', 'gateway.ai-centre.pk', 'app.ai-centre.pk', 'portal.ai-centre.pk']
+2025-07-15 22:46:03 - modules.tech_detector - [32mINFO[0m - wrapper:126 - detect executed in 0.00 seconds
+2025-07-15 22:46:03 - modules.tech_detector - [32mINFO[0m - detect:180 - Starting technology detection for 62 targets
+2025-07-15 22:46:13 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://ai-centre.pk/sitemap.xml
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://mx2.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://proxy.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://app.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://vpn.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://gateway.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://admin.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://host.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://download.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://blog.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://ns2.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://files.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://media.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://files.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://www.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://cdn.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://ns2.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://support.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://remote.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://router.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://imap.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://webmail.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://host.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://images.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://router.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://img.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://docs.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://portal.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://vpn.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://help.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://staging.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://proxy.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://smtp.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://app.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://files.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://admin.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://dns.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://host.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://media.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://docs.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://mx1.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://mx2.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://dev.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://pop.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://shop.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://subdomain.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://blog.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://news.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://ns2.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://gateway.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://css.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://shop.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://img.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://gateway.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://images.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://api.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://mobile.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://smtp.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://images.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://help.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://docs.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://node.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://email.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://js.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://smtp.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://sub.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://www.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://ns.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://webmail.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://cdn.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://firewall.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://css.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://ftp.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://help.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://lb.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://imap.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://js.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://video.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://whois.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://mx.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://media.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://uploads.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://download.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://video.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://dev.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://www.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://store.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://mobile.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://mx1.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://dns.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://mail.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://ns2.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://proxy.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://vpn.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://news.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://news.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://m.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://mail.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://store.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://static.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://app.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://cluster.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://uploads.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://balancer.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://m.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://ns.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://js.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://remote.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://blog.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://support.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://mail.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://m.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://remote.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://admin.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://mx.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://store.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://staging.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://ftp.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://uploads.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://cluster.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://img.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://dev.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://mobile.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://support.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://email.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://dev.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://balancer.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://cdn.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://download.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://uploads.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://portal.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://admin.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://subdomain.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://mobile.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://test.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://server.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://router.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://balancer.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://cache.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://mx2.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://help.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://node.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://sub.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://video.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://assets.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://mx1.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://cdn.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://api.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://store.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://secure.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://node.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://ns1.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://gateway.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://dns.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://media.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://cache.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://email.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://css.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://smtp.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://shop.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://assets.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://wap.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://secure.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://app.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://server.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://static.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://m.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://ns.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://imap.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://vpn.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://ns1.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://mx.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://webmail.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://assets.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://test.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://staging.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://secure.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://node.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://whois.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://ftp.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://ftp.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://cache.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://dns.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://wap.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://files.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://router.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://mx2.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://lb.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://pop.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://support.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://host.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://static.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://sub.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://news.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://balancer.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://portal.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://firewall.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://portal.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://img.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://remote.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://api.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://js.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://shop.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://static.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://ns.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://video.ai-centre.pk:8443
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://subdomain.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://whois.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://ns1.ai-centre.pk:8080
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for http://mail.ai-centre.pk
+2025-07-15 22:46:15 - utils.network - [33mWARNING[0m - make_request:98 - Request timeout for https://imap.ai-centre.pk:8443
+2025-07-15 22:46:33 - modules.tech_detector - [32mINFO[0m - detect:220 - Technology detection completed. Analyzed 36 accessible targets
+2025-07-15 22:46:33 - __main__ - [32mINFO[0m - generate_report:156 - Generating report in html format
+2025-07-15 22:46:33 - reports.report_generator - [32mINFO[0m - generate:47 - Generating html report for ai-centre.pk
+2025-07-15 22:46:33 - reports.report_generator - [32mINFO[0m - generate:68 - HTML report generated: reports\report.html.html
+2025-07-15 22:46:33 - root - [32mINFO[0m - main:380 - Reconnaissance completed successfully. Report saved to: reports\report.html
+2025-07-15 22:46:33 - asyncio - [31mERROR[0m - default_exception_handler:1833 - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002270A26FC20>
+2025-07-15 22:46:33 - asyncio - [31mERROR[0m - default_exception_handler:1833 - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002270A2E3290>
+2025-07-15 22:46:33 - asyncio - [31mERROR[0m - default_exception_handler:1833 - Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270ACFB2F0>, 1803494.75), (<aiohttp.client_proto.ResponseHandler object at 0x000002270A9EE210>, 1803496.078)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270A9EEC90>, 1803478.531)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AD7FE90>, 1803492.093), (<aiohttp.client_proto.ResponseHandler object at 0x000002270AC735F0>, 1803493.578)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270ACF9BB0>, 1803485.406)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AC70050>, 1803492.421), (<aiohttp.client_proto.ResponseHandler object at 0x000002270C001790>, 1803494.687)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270ACF9070>, 1803485.64)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AD7C3B0>, 1803494.453), (<aiohttp.client_proto.ResponseHandler object at 0x000002270AC70A70>, 1803495.89)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270C003A10>, 1803493.578), (<aiohttp.client_proto.ResponseHandler object at 0x000002270A9EC590>, 1803495.343)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AD7FC50>, 1803486.171)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270C0010D0>, 1803486.64)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AD7DA90>, 1803493.703), (<aiohttp.client_proto.ResponseHandler object at 0x000002270ACF8230>, 1803495.812)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AC73E30>, 1803487.234)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AD7CD10>, 1803487.328)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AD7F1D0>, 1803487.531)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270ACFBFB0>, 1803488.062)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AD7D910>, 1803488.203)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270A9ECA10>, 1803488.312)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270C002150>, 1803488.453)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270A7FBB90>, 1803491.812), (<aiohttp.client_proto.ResponseHandler object at 0x000002270A7F8530>, 1803492.093), (<aiohttp.client_proto.ResponseHandler object at 0x000002270A9ED0D0>, 1803492.109), (<aiohttp.client_proto.ResponseHandler object at 0x000002270A9ECAD0>, 1803492.14), (<aiohttp.client_proto.ResponseHandler object at 0x000002270A7FB890>, 1803492.625), (<aiohttp.client_proto.ResponseHandler object at 0x000002270AC71070>, 1803493.687), (<aiohttp.client_proto.ResponseHandler object at 0x000002270ACFB470>, 1803493.796), (<aiohttp.client_proto.ResponseHandler object at 0x000002270A9EC710>, 1803494.062), (<aiohttp.client_proto.ResponseHandler object at 0x000002270ACFA570>, 1803495.5), (<aiohttp.client_proto.ResponseHandler object at 0x000002270A9EEF90>, 1803495.843)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270A9EEED0>, 1803490.703)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AC726F0>, 1803496.984), (<aiohttp.client_proto.ResponseHandler object at 0x000002270A9EE2D0>, 1803498.421)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270C001F10>, 1803491.515)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AC72030>, 1803493.828), (<aiohttp.client_proto.ResponseHandler object at 0x000002270A9EFE90>, 1803494.296)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270A9ED3D0>, 1803494.515), (<aiohttp.client_proto.ResponseHandler object at 0x000002270A9EEA50>, 1803495.468)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AD7E990>, 1803494.671), (<aiohttp.client_proto.ResponseHandler object at 0x000002270A9EFB90>, 1803496.234)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AC711F0>, 1803494.64)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270A9EE090>, 1803494.656)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270A9EC170>, 1803494.968), (<aiohttp.client_proto.ResponseHandler object at 0x000002270AD7C830>, 1803495.484)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270A7F8FB0>, 1803495.062)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270ACFA0F0>, 1803495.187), (<aiohttp.client_proto.ResponseHandler object at 0x000002270A9EDE50>, 1803495.453)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AC71D30>, 1803495.625), (<aiohttp.client_proto.ResponseHandler object at 0x000002270A9ECDD0>, 1803496.578)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270A7F8D70>, 1803495.437)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270A7F94F0>, 1803495.437)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270ACF98B0>, 1803495.468)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270A7F91F0>, 1803495.484)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270C003350>, 1803497.281), (<aiohttp.client_proto.ResponseHandler object at 0x000002270AC72F30>, 1803498.468)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AD7FB90>, 1803495.578)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AC738F0>, 1803495.671)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AD7DB50>, 1803495.812)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270ACF95B0>, 1803495.921)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270ACFAFF0>, 1803496.0)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AC729F0>, 1803496.109)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270A7FBE90>, 1803496.64)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AC707D0>, 1803496.703)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AC72AB0>, 1803496.859)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AD7F350>, 1803496.906)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AD7C950>, 1803496.953)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270ACF9A30>, 1803497.0)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AC72270>, 1803497.078)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AC72FF0>, 1803497.14)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270A9EF950>, 1803497.265)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AC70E30>, 1803497.312)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AC71DF0>, 1803497.39)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AC72E70>, 1803498.062)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270A9ED6D0>, 1803498.109)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270A7FACF0>, 1803498.875)])', 'deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002270AC73230>, 1803499.859)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000002270A26F2F0>
